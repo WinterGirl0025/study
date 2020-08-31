@@ -1,10 +1,10 @@
 
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>用户列举</h1>
     <ul>
       <li v-for="(item,index) in gitlist" :key="index">
-        <router-link :to="'/Detail/'+item">{{item}}</router-link>
+        <router-link :to="'/Detail/'+item" tag="span">{{item}}</router-link>
       </li>
     </ul>
   </div>
@@ -29,5 +29,6 @@ li {
   list-style: none;
   line-height: 50px;
   font-size: 24px;
+  color: #4b7f86;
 }
 </style>
