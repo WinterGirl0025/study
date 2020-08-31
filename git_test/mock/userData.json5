@@ -1,0 +1,8 @@
+{
+    id:"@id()", //随机id
+    username:"@name()",
+    date:"@date()",
+    avatar:"@image('200x200','red','#fff','avatar')",
+    description:"@paragraph()",
+    ip:"@ip()",
+}
