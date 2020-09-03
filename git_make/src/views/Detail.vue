@@ -26,7 +26,6 @@ export default {
         .get('https://api.github.com/users/' + that.login + '/repos')
         .then(res => {
           var des = res.data[0]
-          console.log(des)
           that.img = des.owner.avatar_url
           if (des.description == null) {
             that.description = '他没有描述信息'
